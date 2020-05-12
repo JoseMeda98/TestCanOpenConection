@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <GVL Name="GVL" Id="{5c116770-368d-4fb0-8e7a-fa54f7b9a9e2}">
+    <Declaration><![CDATA[VAR_GLOBAL PERSISTENT
+	// Test IO
+	Statuswort								AT %I* : WORD;
+	pos_actual_value 						AT %I* : DINT;
+	ModesOfOperationDisplay					AT %I* : BYTE;
+	digital_inputs_jat						AT %I* : BYTE;
+	velocity_actual_value					AT %I* : DINT;
+	velocity_sensor_actual_value			AT %I* : DINT;
+	                                		
+	Kontrollwort    						AT %Q* : WORD;
+	pos_demand_value						AT %Q* : DINT;
+	ModesOfOperation						AT %Q* : BYTE;
+	s_digital_inputs_jat					AT %Q* : BYTE;
+	profile_velocity						AT %Q* : DINT;
+	profile_acceleration					AT %Q* : DINT;
+	profile_deceleration					AT %Q* : DINT;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
